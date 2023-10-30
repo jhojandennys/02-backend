@@ -53,6 +53,13 @@
     <version>8.0.32</version>
 
 </dependency>
+
+ <dependency>
+            <groupId>com.okta.spring</groupId>
+            <artifactId>okta-spring-boot-starter</artifactId>
+            <version>3.0.2</version>
+ </dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
