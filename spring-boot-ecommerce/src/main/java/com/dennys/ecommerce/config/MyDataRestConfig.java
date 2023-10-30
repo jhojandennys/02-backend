@@ -2,7 +2,6 @@ package com.dennys.ecommerce.config;
 
 import jakarta.persistence.EntityManager;
 
-import org.hibernate.type.EntityType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
