@@ -1,12 +1,15 @@
 package com.dennys.ecommerce.service;
 
 import com.dennys.ecommerce.dao.CustomerRepository;
+import com.dennys.ecommerce.dto.PaymentInfo;
 import com.dennys.ecommerce.dto.Purchase;
 import com.dennys.ecommerce.dto.PurchaseResponse;
 import com.dennys.ecommerce.entity.Customer;
 import com.dennys.ecommerce.entity.Order;
 import com.dennys.ecommerce.entity.OrderItem;
-
+import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -23,9 +26,11 @@ public class CheckoutServiceImpl implements CheckoutService {
 
     private CustomerRepository customerRepository;
 
-    public CheckoutServiceImpl(CustomerRepository customerRepository) {
+       public CheckoutServiceImpl(CustomerRepository customerRepository,@Value("${stripe.key.secret}") String secretKey) {
         this.customerRepository = customerRepository;
+        Stripe.apiKey = secretKey;
     }
+
 
     @Override
     @jakarta.transaction.Transactional
@@ -76,5 +81,17 @@ public class CheckoutServiceImpl implements CheckoutService {
         return UUID.randomUUID().toString();
     }
 
+@Override
+    public PaymentIntent createPaymentIntent(PaymentInfo PaymentInfo) throws StripeException {
+
+  List<String> paymentMethodTyps = new ArrayList<>();
+  paymentMethodTyps.add("card");
+  Map<String,Object> params = new HashMap<>();
+  params.put("amount",PaymentInfo.getAmount());
+  params.put("currency",PaymentInfo.getCurrency());
+  params.put("payment_method_types", paymentMethodTyps);
+
+       return PaymentIntent.create(params);
+    }
 
 }
