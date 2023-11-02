@@ -2,7 +2,7 @@
 
 ##A fully functional project written in Java showing how to create a REST API
 
-This project is an example that was built along with a Udemy Course showing how to create a custom REST API in Java with Spring Boot:
+This project was built along with a Udemy Course showing how to create a custom REST API in Java with Spring Boot:
 
 *Create Spring Boot Starter Project
 
