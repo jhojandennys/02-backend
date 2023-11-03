@@ -12,7 +12,7 @@ This project was built along with a Udemy Course showing how to create a custom 
 
 *Protect endpoints in Spring Security
 
-*Configure our REST APIs for read only
+*Configure REST APIs for read only
 
 *Create a secure login with Okta App
 
