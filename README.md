@@ -24,8 +24,9 @@ Physical Diagram of the Database
  
 ![Imagen 19-07-24 a las 12 37 a  m](https://github.com/user-attachments/assets/1acbf905-385f-444d-84c2-e20e709369ed)
 
+<br>
 
-Software Arquitecture of Package Diagram
+Packages Diagram of the Software Arquitecture 
 
 ![Imagen](https://github.com/user-attachments/assets/2a8bc675-37e5-4704-a4c0-96d4db5c6439)
 
