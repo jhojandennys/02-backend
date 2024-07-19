@@ -23,7 +23,8 @@ This project was built along with a Udemy Course showing how to create a custom 
 
 Software Arquitecture of Package Diagram
 
-![image](https://github.com/user-attachments/assets/b9338825-193d-460a-b5e5-1007ab5d3603)
+![Imagen](https://github.com/user-attachments/assets/2a8bc675-37e5-4704-a4c0-96d4db5c6439)
+
 
 
 ##How to install this project 
