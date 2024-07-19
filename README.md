@@ -20,6 +20,10 @@ This project was built along with a Udemy Course showing how to create a custom 
 
 *SSL Configuration
 
+Physical Diagram of the Database
+ 
+![Imagen 19-07-24 a las 12 37 a  m](https://github.com/user-attachments/assets/1acbf905-385f-444d-84c2-e20e709369ed)
+
 
 Software Arquitecture of Package Diagram
 
